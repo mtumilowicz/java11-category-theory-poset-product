@@ -27,7 +27,7 @@ class BinaryTree {
             return node;
         }
 
-        return (nonNull(left_lca)) ? left_lca : right_lca;
+        return nonNull(left_lca) ? left_lca : right_lca;
     }
 }
 
