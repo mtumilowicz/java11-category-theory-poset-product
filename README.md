@@ -48,7 +48,8 @@ class BinaryTree {
         Node left_glb = greatestLowerBoundOf(node.left, n1, n2);
         Node right_glb = greatestLowerBoundOf(node.right, n1, n2);
 
-        // if left_glb & right_glb the current node is glb
+        // if left_glb & right_glb are not null 
+        // then the current node is glb
         // because one value is in the left subtree
         // and the other is in the right subtree
         if (nonNull(left_glb) && nonNull(right_glb)) {
