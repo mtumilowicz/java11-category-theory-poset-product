@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/java11-category-theory-poset-product.svg?branch=master)](https://travis-ci.com/mtumilowicz/java11-category-theory-poset-product)
+
 # java11-category-theory-poset-product
 _Reference_: https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Products_and_Coproducts#Examples
 
