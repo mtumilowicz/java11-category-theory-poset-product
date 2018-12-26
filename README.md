@@ -5,9 +5,9 @@ Preliminary info (with basic intuitions) about product
 (category theory): https://github.com/mtumilowicz/java11-category-theory-set-product
 
 # greatest lower bound is a Product in the Poset Category
-Greatest lower bound in a poset (if it exists) for two elements, 
-is a (actually the unique, not just up to isomorphism) product of 
-those two elements.
+Greatest lower bound (if it exists) in a poset is a 
+product of those two elements (actually the unique, 
+not just up to isomorphism).
 
 This provides lots of examples where products might exist for 
 some, all, or no pairs of elements in a category.
@@ -27,7 +27,7 @@ let `p x q := p ^ q` (`^` - greatest lower bound)
     
 # project description
 We provide basic implementation of finding greatest
-lower bound for two nodes:
+lower bound of two nodes in the binary tree:
 ```
 class BinaryTree {
     Node root;
