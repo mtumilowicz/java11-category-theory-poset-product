@@ -24,3 +24,6 @@ let `p x q := p ^ q` (`^` - greatest lower bound)
     * if there is other `P'` that: 
     `P' <= p` and `P' <= q` then `P' <= p ^ q` (
     by definition of greatest lower bound)
+    
+# project description
+We provide basic implementation of 
