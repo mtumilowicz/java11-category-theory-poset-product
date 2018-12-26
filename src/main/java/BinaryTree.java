@@ -7,11 +7,11 @@ import static java.util.Objects.nonNull;
 class BinaryTree {
     Node root;
 
-    Node findLCA(int n1, int n2) {
-        return findLCA(root, n1, n2);
+    Node greatestLowerBoundOf(int n1, int n2) {
+        return greatestLowerBoundOf(root, n1, n2);
     }
 
-    private Node findLCA(Node node, int n1, int n2) {
+    private Node greatestLowerBoundOf(Node node, int n1, int n2) {
         if (isNull(node)) {
             return null;
         }
@@ -20,14 +20,14 @@ class BinaryTree {
             return node;
         }
 
-        Node left_lca = findLCA(node.left, n1, n2);
-        Node right_lca = findLCA(node.right, n1, n2);
+        Node left_glb = greatestLowerBoundOf(node.left, n1, n2);
+        Node right_glb = greatestLowerBoundOf(node.right, n1, n2);
 
-        if (nonNull(left_lca) && nonNull(right_lca)) {
+        if (nonNull(left_glb) && nonNull(right_glb)) {
             return node;
         }
 
-        return nonNull(left_lca) ? left_lca : right_lca;
+        return nonNull(left_glb) ? left_glb : right_glb;
     }
 }
 

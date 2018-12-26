@@ -19,7 +19,7 @@ public class BinaryTreeTest {
                
      */
     @Test
-    public void findLCA_root() {
+    public void greatestLowerBoundOf_root() {
         var tree = new BinaryTree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
@@ -29,8 +29,8 @@ public class BinaryTreeTest {
         tree.root.right.right = new Node(6);
         tree.root.left.left.right = new Node(7);
 
-        var lca = tree.findLCA(7, 6);
-        assertThat(lca.data, is(1));
+        var glb = tree.greatestLowerBoundOf(7, 6);
+        assertThat(glb.data, is(1));
     }
 
     /*
@@ -46,7 +46,7 @@ public class BinaryTreeTest {
            
      */
     @Test
-    public void findLCA_lca_subtree() {
+    public void greatestLowerBoundOf_subtree() {
         var tree = new BinaryTree();
         
         
@@ -65,7 +65,7 @@ public class BinaryTreeTest {
 
         tree.root.right.left.left.left = new Node(11);
         
-        var lca = tree.findLCA(8, 10);
-        assertThat(lca.data, is(3));
+        var glb = tree.greatestLowerBoundOf(8, 10);
+        assertThat(glb.data, is(3));
     }
 }
