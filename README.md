@@ -12,8 +12,8 @@ those two elements.
 This provides lots of examples where products might exist for 
 some, all, or no pairs of elements in a category.
 
-(proof is quite easy, and strictly from definition of
-greatest lower bound)
+(proof is quite easy, and strictly based on the definition of
+the greatest lower bound)
 
 let `p x q := p ^ q` (`^` - greatest lower bound)
 
@@ -21,6 +21,6 @@ let `p x q := p ^ q` (`^` - greatest lower bound)
     * `p ^ q <= p ==> p ^ q -> p`
     * `p ^ q <= q ==> p ^ q -> q`
 1. and uniqueness
-    * if there is other `P'` with projections: 
+    * if there is other `P'` that: 
     `P' <= p` and `P' <= q` then `P' <= p ^ q` (
     by definition of greatest lower bound)
